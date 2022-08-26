@@ -10,6 +10,7 @@ const Container = styled.div`
   flex-direction: column;
 `;
 const Title = styled.h2`
+  margin-top: 0;
   font-size: 70px;
   margin-bottom: 20px;
 `;
