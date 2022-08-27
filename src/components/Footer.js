@@ -5,10 +5,12 @@ import PinterestIcon from "@mui/icons-material/Pinterest";
 import HomeIcon from "@mui/icons-material/Home";
 import PhoneIcon from "@mui/icons-material/Phone";
 import EmailIcon from "@mui/icons-material/Email";
+import { mobile } from "../responsive";
 
 const Container = styled.div`
   display: flex;
   background-color: rgb(0, 128, 128, 0.15);
+  ${mobile({ flexDirection: "column" })}
 `;
 const Left = styled.div`
   flex: 1mm;
@@ -42,6 +44,7 @@ const SocialIcon = styled.div`
 const Center = styled.div`
   flex: 1;
   padding: 20px;
+  ${mobile({ display: "none" })}
 `;
 
 const Title = styled.h3`
